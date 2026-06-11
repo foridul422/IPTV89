@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FIFA World Cup Live TV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <p class="tag">LIVE IPTV</p>
+      <h1>FIFA World Cup Live TV</h1>
+      <p>সব channel আগে থেকেই add করা আছে। শুধু hosting করুন।</p>
+    </header>
+
+    <section class="player-card">
+      <video id="video" controls autoplay playsinline></video>
+      <div class="nowbar">
+        <div>
+          <span>Now Playing</span>
+          <h2 id="nowTitle">Channel loading...</h2>
+        </div>
+        <button id="muteBtn">Mute</button>
+      </div>
+      <p id="status">Ready</p>
+    </section>
+
+    <section class="channels-wrap">
+      <div class="section-title">
+        <h3>Channels</h3>
+        <input id="search" type="search" placeholder="Search channel..." />
+      </div>
+      <div id="channels" class="channels"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
